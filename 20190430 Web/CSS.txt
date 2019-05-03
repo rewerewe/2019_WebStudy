@@ -1,40 +1,40 @@
-¡á¡á¡á CSS ¼±ÅÃÀÚ ¹× ¼±¾ð ¹æ¹ý ¡á¡á¡á
+ï»¿â– â– â–  CSS ì„ íƒìž ë° ì„ ì–¸ ë°©ë²• â– â– â– 
 
-¡Û CSS ¼±ÅÃÀÚ ±¸¼º ¹× ¼³Á¤
+â—‹ CSS ì„ íƒìž êµ¬ì„± ë° ì„¤ì •
 
-   - ¡º*¡» °ø¿ë ¼±ÅÃÀÚ, ÀüÃ¼ ¼±ÅÃÀÚ
-     ¸ðµç ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÑ´Ù.
+   - ã€Ž*ã€ ê³µìš© ì„ íƒìž, ì „ì²´ ì„ íƒìž
+     ëª¨ë“  ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•œë‹¤.
 
-   - ¡ºE¡» ¿¤¸®¸ÕÆ® ¼±ÅÃÀÚ, ÅÂ±× ¼±ÅÃÀÚ, Å¸ÀÔ ¼±ÅÃÀÚ
-      E ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÑ´Ù.
+   - ã€ŽEã€ ì—˜ë¦¬ë¨¼íŠ¸ ì„ íƒìž, íƒœê·¸ ì„ íƒìž, íƒ€ìž… ì„ íƒìž
+      E ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•œë‹¤.
 
-	(ÅÂ±×)    span { color : blue }
-	(Å¬·¡½º) .even { color : blue }
-	(¾ÆÀÌµð)   #sp { color : blue }
+	(íƒœê·¸)    span { color : blue }
+	(í´ëž˜ìŠ¤) .even { color : blue }
+	(ì•„ì´ë””)   #sp { color : blue }
 
-	<span> ¾îÂ¼±¸ ÀúÂ¼±¸ </span>
-	<span class="even" id="sp"> ¾îÂ¼±¸ ÀúÂ¼±¸ </span>
-	<span> ¾îÂ¼±¸ ÀúÂ¼±¸ </span>
-	<span class="even"> ¾îÂ¼±¸ ÀúÂ¼±¸ </span>
+	<span> ì–´ì©Œêµ¬ ì €ì©Œêµ¬ </span>
+	<span class="even" id="sp"> ì–´ì©Œêµ¬ ì €ì©Œêµ¬ </span>
+	<span> ì–´ì©Œêµ¬ ì €ì©Œêµ¬ </span>
+	<span class="even"> ì–´ì©Œêµ¬ ì €ì©Œêµ¬ </span>
 
 
-   - ¡º.¡» Å¬·¡½º ¼±ÅÃÀÚ
-     html ¿¡¼­¸¸ »ç¿ëÇÒ ¼ö ÀÖÀ¸¸ç, ¿¹¸¦ µé¾î ¡ºdiv.warning¡»Àº
-     warning ÀÌ¶ó´Â Å¬·¡½º¸¦ °¡Áö°í ÀÖ´Â div ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÏ°Ô µÈ´Ù.
+   - ã€Ž.ã€ í´ëž˜ìŠ¤ ì„ íƒìž
+     html ì—ì„œë§Œ ì‚¬ìš©í•  ìˆ˜ ìžˆìœ¼ë©°, ì˜ˆë¥¼ ë“¤ì–´ ã€Ždiv.warningã€ì€
+     warning ì´ë¼ëŠ” í´ëž˜ìŠ¤ë¥¼ ê°€ì§€ê³  ìžˆëŠ” div ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•˜ê²Œ ëœë‹¤.
 
-   - ¡º#¡» ¾ÆÀÌµð ¼±ÅÃÀÚ
-     ¿¹¸¦ µé¾î ¡º#myId¡»´Â myId¸¦ ¾ÆÀÌµð·Î »ç¿ëÇÏ´Â ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÏ°Ô µÈ´Ù.
+   - ã€Ž#ã€ ì•„ì´ë”” ì„ íƒìž
+     ì˜ˆë¥¼ ë“¤ì–´ ã€Ž#myIdã€ëŠ” myIdë¥¼ ì•„ì´ë””ë¡œ ì‚¬ìš©í•˜ëŠ” ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•˜ê²Œ ëœë‹¤.
    
-   - ¡ºE>F¡» ÀÚ½Ä ¼±ÅÃÀÚ
-     E ¿¤¸®¸ÕÆ®ÀÇ ÀÚ½Ä ¿¤¸®¸ÕÆ® F ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÏ°Ô µÈ´Ù.
+   - ã€ŽE>Fã€ ìžì‹ ì„ íƒìž
+     E ì—˜ë¦¬ë¨¼íŠ¸ì˜ ìžì‹ ì—˜ë¦¬ë¨¼íŠ¸ F ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•˜ê²Œ ëœë‹¤.
   
-   - ¡ºE F¡» ÀÚ¼Õ ¼±ÅÃÀÚ, ÇÏÀ§ ¼±ÅÃÀÚ
-     E ¿¤¸®¸ÕÆ®ÀÇ ÇÏÀ§¿¡ ÀÖ´Â F ¿¤¸®¸ÕÆ®¸¦ ¼±ÅÃÇÏ°Ô µÈ´Ù.
-     ÀÌ °æ¿ì Æ¯ÀÌÇÑ Á¡À» E ¿Í F»çÀÌ¿¡ ´Ù¸¥ ¿¤¸®¸ÕÆ®°¡ Æ÷ÇÔµÇ¾î ÀÖ´õ¶óµµ
-     ¼±ÅÃ ´ë»ó¿¡ ÇØ´çÇÑ´Ù´Â °ÍÀÌ´Ù.
+   - ã€ŽE Fã€ ìžì† ì„ íƒìž, í•˜ìœ„ ì„ íƒìž
+     E ì—˜ë¦¬ë¨¼íŠ¸ì˜ í•˜ìœ„ì— ìžˆëŠ” F ì—˜ë¦¬ë¨¼íŠ¸ë¥¼ ì„ íƒí•˜ê²Œ ëœë‹¤.
+     ì´ ê²½ìš° íŠ¹ì´í•œ ì ì„ E ì™€ Fì‚¬ì´ì— ë‹¤ë¥¸ ì—˜ë¦¬ë¨¼íŠ¸ê°€ í¬í•¨ë˜ì–´ ìžˆë”ë¼ë„
+     ì„ íƒ ëŒ€ìƒì— í•´ë‹¹í•œë‹¤ëŠ” ê²ƒì´ë‹¤.
   
-   - ¡ºE+F¡» ÀÎÁ¢ ¼±ÅÃÀÚ, ÇüÁ¦ ¼±ÅÃÀÚ 
-     E¿Í F °¡ ¼­·Î »óÇÏÀ§ °ü°è°¡ ¾Æ´Ñ, ÀÎÁ¢ÇØ ÀÖ´Â ÇüÁ¦ °ü°èÀÎ °æ¿ì ¼±ÅÃÇÏ°Ô µÈ´Ù.
+   - ã€ŽE+Fã€ ì¸ì ‘ ì„ íƒìž, í˜•ì œ ì„ íƒìž 
+     Eì™€ F ê°€ ì„œë¡œ ìƒí•˜ìœ„ ê´€ê³„ê°€ ì•„ë‹Œ, ì¸ì ‘í•´ ìžˆëŠ” í˜•ì œ ê´€ê³„ì¸ ê²½ìš° ì„ íƒí•˜ê²Œ ëœë‹¤.
 	
 	<head>
 	</head>
@@ -42,30 +42,30 @@
 	<body>
 	</body>
 
-   - ¡ºE:action¡» µ¿Àû ¼±ÅÃÀÚ, °¡»ó ¼±ÅÃÀÚ
-      »ç¿ëÀÚ ¾×¼ÇÀÌ Àû¿ëµÇ´Â »óÈ²¿¡ µû¶ó ¼±ÅÃ ¿©ºÎ°¡ °áÁ¤µÈ´Ù.
-      ¿¹¸¦ µé¾î, ¡ºbutton:HOVER¡»´Â ¹öÆ° À§¿¡ ¸¶¿ì½º Ä¿¼­°¡ ¸Ó¹°°Ô µÇ¸é
-      ÀÌ »óÈ²¿¡¼­¸¸ ¼±ÅÃÀÌ ÀÌ·ç¾îÁö°Ô µÈ´Ù.
+   - ã€ŽE:actionã€ ë™ì  ì„ íƒìž, ê°€ìƒ ì„ íƒìž
+      ì‚¬ìš©ìž ì•¡ì…˜ì´ ì ìš©ë˜ëŠ” ìƒí™©ì— ë”°ë¼ ì„ íƒ ì—¬ë¶€ê°€ ê²°ì •ëœë‹¤.
+      ì˜ˆë¥¼ ë“¤ì–´, ã€Žbutton:HOVERã€ëŠ” ë²„íŠ¼ ìœ„ì— ë§ˆìš°ìŠ¤ ì»¤ì„œê°€ ë¨¸ë¬¼ê²Œ ë˜ë©´
+      ì´ ìƒí™©ì—ì„œë§Œ ì„ íƒì´ ì´ë£¨ì–´ì§€ê²Œ ëœë‹¤.
 
-   ¢º ÁßÃ¸ÇØ¼­ »ç¿ë°¡´ÉÇÕ´Ï´Ù. 
-      ¡ºdiv.warning¡» ¡æ elememt + class ¼±ÅÃÀÚ 
+   â–¶ ì¤‘ì²©í•´ì„œ ì‚¬ìš©ê°€ëŠ¥í•©ë‹ˆë‹¤. 
+      ã€Ždiv.warningã€ â†’ elememt + class ì„ íƒìž 
 
 
-¡Û CSS ¼±¾ð ¹æ¹ý
-   - ¿ÜºÎ ¼±¾ð (External Linked Style)
-     HTML Document ¿ÜºÎ¿¡ º°µµÀÇ CSSÆÄÀÏÀ» »ý¼ºÇÏ¿© ³»¿ëÀ» ±¸¼ºÇÑ´Ù.
-     ¡ºÈ®ÀåÀÚ :*.css¡»
-     ÀÌ CSS¸¦ Àû¿ëÇÒ ¹®¼­¿¡´Â ¡º<link rel="stylesheet" herf="cssÆÄÀÏ°æ·Î">¡»
-     ¸¦ È°¿ëÇÏ¿© ¿ÜºÎÀÇ CSS ¸¦ ÇØ´ç ¹®¼­¿¡ Àû¿ëÇÒ ¼ö ÀÖµµ·Ï Ã³¸®ÇÑ´Ù.
+â—‹ CSS ì„ ì–¸ ë°©ë²•
+   - ì™¸ë¶€ ì„ ì–¸ (External Linked Style)
+     HTML Document ì™¸ë¶€ì— ë³„ë„ì˜ CSSíŒŒì¼ì„ ìƒì„±í•˜ì—¬ ë‚´ìš©ì„ êµ¬ì„±í•œë‹¤.
+     ã€Ží™•ìž¥ìž :*.cssã€
+     ì´ CSSë¥¼ ì ìš©í•  ë¬¸ì„œì—ëŠ” ã€Ž<link rel="stylesheet" herf="cssíŒŒì¼ê²½ë¡œ">ã€
+     ë¥¼ í™œìš©í•˜ì—¬ ì™¸ë¶€ì˜ CSS ë¥¼ í•´ë‹¹ ë¬¸ì„œì— ì ìš©í•  ìˆ˜ ìžˆë„ë¡ ì²˜ë¦¬í•œë‹¤.
 
-   - ¹®¼­ ¾È¿¡ Æ÷ÇÔÇÏ¿© ¼±¾ð (Embedded)
-     HTML Document ³»ºÎ¿¡
-     ¡º<Style type="text/css">
-		¼±ÅÃÀÚ { Àû¿ëÇÒ ½ºÅ¸ÀÏ ³»¿ë }
-       </Style>¡»
-     °ú °°ÀÌ ±â¼úÇÏ¿© ½ºÅ¸ÀÏÀ» Àû¿ë½ÃÅ²´Ù.
+   - ë¬¸ì„œ ì•ˆì— í¬í•¨í•˜ì—¬ ì„ ì–¸ (Embedded)
+     HTML Document ë‚´ë¶€ì—
+     ã€Ž<Style type="text/css">
+		ì„ íƒìž { ì ìš©í•  ìŠ¤íƒ€ì¼ ë‚´ìš© }
+       </Style>ã€
+     ê³¼ ê°™ì´ ê¸°ìˆ í•˜ì—¬ ìŠ¤íƒ€ì¼ì„ ì ìš©ì‹œí‚¨ë‹¤.
 
-  - ¿¤¸®¸ÕÆ®¿¡ Á÷Á¢ ¼±¾ð (Direct, Inline)
-    ½ºÅ¸ÀÏÀ» Àû¿ëÇÒ ÅÂ±×(¿¤¸®¸ÕÆ®)¿¡ Á÷Á¢ ¡ºStyle="Àû¿ëÇÒ ½ºÅ¸ÀÏ ³»¿ë"¡»
-    Çü½ÄÀ¸·Î ±â¼úÇÏ¿© Ã³¸®ÇÑ´Ù.
-    ´ë»ó¿¡ Á÷Á¢ Àû¿ëÇÏ´Â ¹æ½ÄÀÌ±â ¶§¹®¿¡ ¼±ÅÃÀÚ´Â ±â¼úÇÏÁö ¾Ê´Â´Ù. 	
+  - ì—˜ë¦¬ë¨¼íŠ¸ì— ì§ì ‘ ì„ ì–¸ (Direct, Inline)
+    ìŠ¤íƒ€ì¼ì„ ì ìš©í•  íƒœê·¸(ì—˜ë¦¬ë¨¼íŠ¸)ì— ì§ì ‘ ã€ŽStyle="ì ìš©í•  ìŠ¤íƒ€ì¼ ë‚´ìš©"ã€
+    í˜•ì‹ìœ¼ë¡œ ê¸°ìˆ í•˜ì—¬ ì²˜ë¦¬í•œë‹¤.
+    ëŒ€ìƒì— ì§ì ‘ ì ìš©í•˜ëŠ” ë°©ì‹ì´ê¸° ë•Œë¬¸ì— ì„ íƒìžëŠ” ê¸°ìˆ í•˜ì§€ ì•ŠëŠ”ë‹¤. 	
