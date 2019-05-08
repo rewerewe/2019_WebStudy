@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- 내가 풀이한 내용 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test024.html</title>
+<style type="text/css">
+	* {font-family: 맑은 고딕; font-weight: bold;}
+	td {text-align: right;}
+	
+</style>
+
+<script type="text/javascript">
+
+	function calMan() 
+	{
+		//확인 alert("함수 호출 확인");
+		var y = document.getElementById("txtYear").value;
+		var m = document.getElementById("txtMonth").value;
+		var w = 0;
+		var nalsu = 0;
+		var arrDays = new Array();
+		
+		//확인 alert(year + "/" + month);
+		
+		arrDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+		
+		// 윤년이면 날수에 +1
+		if ((y%4==0 && y%100!=0) || y%400==0) 
+			arrDays[1] = 29;			
+
+		
+		//확인 nalsu = arrDays[1];
+		//     alert(nalsu);
+		
+		// 2019년 5월의 1일은 수요일
+		//-- 2019년 4월까지의 날수 종합
+		// (1) 1년 1월 1부터 ~ 2018년 12월 31일까지의 날수 종합		→ 연도
+		// (2) + 2019년 1월 1일 ~ 2019년 4월 30일까지 날수 더해주기 → 날수 
+		// (3) 2019년 5월(입력한 년,월)의 1일과 요일 찾아내기   	→ 요일
+		 
+		// (1) 연도 
+		nalsu = (y-1)*365 + (y-1)/4 - (y-1)/100 + (y-1)/400;
+		
+		//확인 alert(nalsu);	-- 737059.365
+		
+		// (2) 날수
+		for (var i = 0; i < (m-1); i++)
+		{
+			nalsu += arrDays[i]
+		} 
+		//확인 alert(nalsu);	-- 737179.365	
+		
+		// (3) 요일
+		w = nalsu%7;
+		w += 1;
+		
+		// Math.round(w);
+		alert(Math.round(w));
+		
+		// 출력
+		var tableNode = document.getElementById("calendarTbl");
+		
+		var trNode = document.createElement("tr");
+		
+		// td 정의 - 빈칸
+		// (1) 시작하는 요일전까지 공백 출력
+		for (var i = 1; i < w ; i++)
+		{
+			trNode.appendChild(createTdNode(" "));
+		}
+		
+		//확인 tableNode.appendChild(trNode);
+		
+				
+		for (var i = 1; i <= arrDays[m-1]; i++)
+		{
+			trNode.appendChild(createTdNode(i));
+			w++;
+		}
+		
+		/* 
+			
+			if (w%7==0)
+				trNode.appendChild(createTdNode(" "));
+		
+		if (W%7!=0)
+			trNode.appendChild(createTdNode(" "));
+		
+	}
+	
+		 */
+	}
+		 
+		 
+	function createTdNode(val)
+	{
+		var textNode = document.createTextNode(val);
+		var tdNode = document.createElement("td");
+		tdNode.appendChild(textNode);
+		
+		return tdNode;
+	}
+		 
+		 
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>테이블 동적 생성으로 만년달력 그리기</h1>
+	<hr>
+</div>
+
+<div>
+	<form>
+		<input type="text" id="txtYear" class="txt" style="width: 67px"> 년
+		<input type="text" id="txtMonth" class="txt" style="width: 67px"> 월
+		<br><br>
+		<button type="button" class="btn" style="width: 200px" onclick="calMan()">만년달력 그리기</button>
+		<br><br>
+		
+		<table border="1" id="calendarTbl">
+			<tr>
+				<th>일</th>
+				<th>월</th>
+				<th>화</th>
+				<th>수</th>
+				<th>목</th>
+				<th>금</th>
+				<th>토</th>
+			</tr>
+		</table>
+	</form>
+</div>
+
+</body>
+</html>
