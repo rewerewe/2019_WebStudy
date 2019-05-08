@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test031.html</title>
+<style type="text/css">
+	* {font-family: 맑은 고딕; color: #223322;}
+	.btn {width: 240px; font-size: 17px;}
+	.btn:hover {color: orange; font-weight: bold;}
+</style>
+
+<script type="text/javascript">
+
+	//select 를 다루어보기 위한 테스트 함수 정의 
+	function selectTest()
+	{
+		// alert("함수 호출 완료");
+		
+		/* 첫 번째 방법 : 다중 선택이 어려워 잘 사용되지 않는다. 
+		var position = document.getElementById("userPosition").value;
+		
+		alert(position);
+		*/
+		
+		/* 두 번째 방법 
+		var positionObj = document.getElementById("userPosition");
+		
+		var positionOptions = positionObj.options;
+		var positionMsg = "";
+		
+		for (var i=0; i < positionOptions.length; i++)
+		{
+			if (positionOptions[i].selected)
+			{
+				// 단일 선택
+				positionMsg = positionOptions[i].value;
+				break;				//-- 다중선택 허용일경우 사용안함.
+
+				// 다중 선택 
+				//positionMsg = positionOptions[i].value + " ";
+			}
+		}
+		alert(positionMsg);
+		*/
+		
+		/* 세 번째 방법 
+		var positionObj = document.getElementById("userPosition");
+		// alert(positionObj.selectedIndex);
+		//--==>> 부장: 0, 과장: 1, 대리: 2, 사원: 3
+	
+		// alert(positionObj.options[2].value);
+		//--==>> 대리
+		
+		var positionMsg = positionObj.options[positionObj.selectedIndex].value;
+		//alert(positionMsg);
+		*/
+	}
+	
+	function addMember()
+	{
+		var name = document.getElementById("userName").value;
+		var ssn = document.getElementById("userSsn").value;
+		var city = getValue(document.getElementById("userCity"));
+		var dept = getValue(document.getElementById("userDepartment"));
+		var position = getValue(document.getElementById("userPosition"));
+		var basicpay = document.getElementById("userBasicPay").value;
+
+		// alert(name+ ", " + ssn);
+		
+		document.getElementById("memberList").innerHTML
+		
+		+= ("<tr><td>" + name + "</td><td>" + ssn + "</td><td>" + city + "</td><td>" + dept + "</td><td>"
+	    	+ position + "</td><td>" + basicpay + "</td></tr>" );
+	}
+	
+	function getValue(obj)
+	{
+		// var valueObj = document.getElementById(obj);
+		var value = obj.options[obj.selectedIndex].value;
+		
+		return value;
+	}
+	
+</script>
+
+</head>
+<body>
+
+<div>
+   <h1>자바스크립트 활용</h1>
+   <hr>
+</div>
+
+<div>
+   <h2>선택목록(select) 다루기</h2>
+   
+   <form>
+      <table>
+         <tr>
+            <td>이름</td>
+            <td>
+               <input type="text" id="userName" placeholder="ex)홍길동">
+            </td>
+         </tr>
+         <tr>
+            <td>주민번호</td>
+            <td>
+               <input type="text" id="userSsn" placeholder="ex)751212-1234567">
+            </td>
+         </tr>
+         <tr>
+            <td>지역</td>
+            <td>
+               <!-- <input type="text" id="userCity" placeholder="ex)서울"> 
+                     ▼ 옵션에 서울이라 명시되어있지만 value값으로 넘겨준 것은 아니다 -->
+               <select id="userCity">
+               		<option value="1123(서울)">서울</option>
+               		<option value="2234(대전)" selected="selected">대전</option>
+               		<option value="3345(광주)">광주</option>
+               		<option value="4456(대구)">대구</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>부서</td>
+            <td>
+               <!-- <input type="text" id="userDepartment" placeholder="ex)개발부"> -->
+               <select id="userDepartment">
+               		<option value="9987(개발부)">개발부</option>
+               		<option value="8876(인사부)">인사부</option>
+               		<option value="7765(자재부)">자재부</option>
+               		<option value="6654(영업부)">영업부</option>
+               		<option value="5543(총무부)">총무부</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>직위</td>
+            <td>
+               <!-- <input type="text" id="userPosition" placeholder="ex)부장"> -->
+               <select id="userPosition">
+               		<option value="zaq(부장)">부장</option>
+               		<option value="xsw(과장)">과장</option>
+               		<option value="cde(대리)">대리</option>
+               		<option value="vfr(사원)" selected="selected">사원</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>기본급</td>
+            <td>
+               <input type="text" id="userBasicPay" placeholder="ex)3000000">
+            </td>
+         </tr>
+      </table>
+   
+      <!-- <input type="button" value="직원 추가" class="btn" onclick="selectTest()"> -->
+      <input type="button" value="직원 추가" class="btn" onclick="addMember()">
+      <br><br>
+      
+      <table id="memberList">
+         <tr>
+            <td>이름</td>
+            <td>주민번호</td>
+            <td>지역</td>
+            <td>부서</td>
+            <td>직위</td>
+            <td>기본급</td>
+         </tr>
+      </table>
+   </form>
+</div>
+
+</body>
+</html>
