@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send11.html</title>
+</head>
+<body>
+<div>
+	<h1>데이터 송수신 실습1</h1>
+	<hr>
+</div>
+
+<!-- 포워딩/ 리다이렉트와 관련한 중요한 실습 -->
+<!-- 사칙연산 수행을 위한 정수 입력 페이지를 구성한다. (Send11.html) -->
+
+<!-- 사용자 최초 요청페이지 -->
+<!-- 『http://localhost:8090/WebApp07/Send11.html』 -->
+
+<!-- 연산 전용 페이지 -->
+<!-- 『http://localhost:8090/WebApp07/Forward11.jsp』  → java → Servlet -->
+<!-- ※ 스크립트 릿 코드만 존재 -->
+<!--  +jsp:forward 액션 태그 -->
+
+<!-- 최조에 결과 출력 페이지 -->
+<!-- 『http://localhost:8090/WebApp07/Receive11.html』 -->
+
+<div>
+<!-- <form action="Forward11.jsp"> -->
+<form action="Forward11_1.jsp">
+	<table border="1">
+		<tr>
+		<td><input type="text" id="su1" name="su1"></td>
+		 
+		 <td><select name ="yon" id="yon">
+		 	<option  value="0" selected="selected">선택하세요 </option>
+		 	<option  value="1">+</option>
+		 	<option  value="2">-</option>
+		 	<option  value="3">*</option>
+		 	<option  value="4">/</option>
+		 	
+		 </select></td>  
+		  
+		<td><input type="text" id="su2" name="su2"></td> 
+		</tr>
+		<tr>
+		<td colspan="3"><button type="submit" style="width:100%;"onclick="this.form.action='Forward11.jsp'">연산결과보기</td>
+		</tr>
+	</table>
+</form>
+</div>
+
+
+</body>
+</html>

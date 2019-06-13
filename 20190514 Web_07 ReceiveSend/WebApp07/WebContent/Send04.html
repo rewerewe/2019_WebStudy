@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Send04.html</title>
+</head>
+<body>
+
+<!-- 
+	○ 데이터 송수신 실습 04
+	   - 회원가입과 관련한 기본정보를 입력받는 html 페이지를 작성한다.
+	   - 전송 전에 (클라이언트 측에서 작성한 내용을 서버에 제출하기 전에)
+	     입력 데이터에 대한 검사 과정을 자바스크립트를 활용하여 
+	     추가할 수 있도록 한다.
+	     
+	     아이디(*)    [ textbox  ]
+	     패스워드(*)  [ password ]
+	     이름(*)  	  [ textbox  ]
+	     전화번호(*)  [ textbox  ]
+	     
+	     성별 		  ● 여자 ○ 남자
+	     
+	     지역         [  서울 ▼ ]
+	                     대전
+	                     대구
+	                     광주
+	                       
+	     수강과목     ㅁ자바기초 ㅁ오라클중급 ㅁJDBC심화 ㅁJSP활용
+	    
+	     <회원가입> <취소>
+	     
+	   - 회원가입 버튼클릭시
+	     회원 입력 정보들의 내용을 출력하는 jsp 페이지를 구성하여
+	     데이터를 전달할 수 있도록 한다.
+	     
+	   - 사용자 최조 요청 주소는 
+	     『http://localhost:8090/WebApp07/Send04.html』로 한다.
+	     
+	○ Send04.html
+	   Receive04.jsp	   	     		
+ -->
+ 
+<div>
+	<h1>데이터 송수신 실습 03</h1>
+	<hr>
+</div>
+
+<div>
+	<form action="Receive04.jsp" method="post">
+		<table>
+			<tr>
+				<th>아이디(*)</th>
+				<td>
+					<input type="text" name="userId">
+				</td>
+			</tr>
+			<tr>
+				<th>비밀번호(*)</th>
+				<td>
+					<input type="password" name="userPw">
+				</td>
+			</tr>
+			<tr>
+				<th>이름(*)</th>
+				<td> 
+					<input type="text" name="userName">
+				</td>
+			</tr>
+			<tr>
+				<th>전화번호(*)</th>
+				<td> 
+					<input type="text" name="userTel">
+				</td>
+			</tr>
+			<tr>
+				<th>성별</th>
+				<td>
+					<label><input type="radio" value="M" name="sung">남자</label>
+					<label><input type="radio" value="F" name="sung">여자</label>
+				</td>
+			</tr>
+			<tr>
+				<th>지역</th>
+				<td> 
+					<select name="city">
+						<option>서울</option>
+						<option>대전</option>
+						<option>대구</option>
+						<option>광주</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>수강과목</th>
+				<td>
+					<label><input type="checkbox" value="자바기초" name="sub">자바기초</label>
+					<label><input type="checkbox" value="오라클중급" name="sub">오라클중급</label>
+					<br>
+					<label><input type="checkbox" value="JDBC심화" name="sub">JDBC심화</label>
+					<label><input type="checkbox" value="JSP활용" name="sub">JSP활용</label>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2">
+				<button type="submit" class=btn style="width: 150px">전송</button>
+				<button type="reset" class=btn style="width: 150px">취소</button>
+			</tr>
+		</table>
+	</form>
+</div>
+
+
+</body>
+</html>
