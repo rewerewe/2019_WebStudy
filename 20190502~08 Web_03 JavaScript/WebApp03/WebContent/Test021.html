@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test021.html</title>
+<style type="text/css">
+	* 
+	{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 15pt; 
+		font-family: 나눔고딩코딩;
+		font-weight: bold;	
+	}
+</style>
+
+
+<script type="text/javascript">
+	
+	function myresult()
+	{
+		var arr = document.getElementById("txtarray").value 
+		alert(arr);
+		document.getElementById("txtall").value = arr
+	}
+
+</script>
+
+</head>
+<body>
+
+<!-- 
+	사용자로부터 임의의 정수를 임의의 갯수만큼 입력받고,
+	그 내용으로 배열을 구성하여 
+	그 정수들 중 가장 큰 수를 출력해 줄 수 있는 페이지를 구성한다.
+	HTML, CSS, JavaScript 활용.
+	
+	페이지 레이아웃 
+	--------------------------------------------------------------
+	데이터 입력(공백 구분) [                   ]
+	
+	<     결과 확인      >
+	
+	전체출력   [              ]
+	가장 큰 수 [        ]
+	
+	--------------------------------------------------------------
+ -->
+
+<div>
+	<form>
+		<div>
+			데이터 입력(공백 구분)
+			<input type="text" id="txtarray" class="txt"><br><br>
+			<input type="button" value="결과 확인" 
+			style="width: 350px" onclick="myArray()"><br><br>
+			- 전체 출력 
+			<input type="text" id="txtall" class="txt"><br>
+			- 가장 큰 수 
+			<input type="text" id="txtbig" class="txt">
+		</div>
+	</form>
+</div>
+</body>
+</html>
