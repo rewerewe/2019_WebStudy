@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test023_2.html</title>
+
+<script>
+function name()
+{
+	document.getElementById
+}
+
+function cal()
+{
+	var str = "";
+	var arr = new Array(new Array(), new Array(), new Array(), new Array(), new Array(), new Array());
+	//                     이름들    국어점수들   영어점수들   수학점수들     총점들       등수들
+ 	var n=0;
+	
+	do
+	{
+		str = prompt("이름 국어 영어 수학(" + (n+1) + ") : ");
+		
+		if (str==null || str=="" || str==".")
+			break;
+		
+		var member = str.split(" ");
+		
+		arr[0][n] = member[0];
+		arr[1][n] = member[1];
+		arr[2][n] = member[2];
+		arr[3][n] = member[3];
+		arr[4][n] = (Number(member[1]) + Number(member[2]) + Number(member[3])).toString();
+		arr[5][n] = 1;
+		
+		n++;
+	} while (true);
+	
+	// 석차 계산
+	for (var i = 0; i < arr[0].length; i++)
+	{
+		
+		for (var j = 0; j < arr[0].length; j++)
+		{
+			if (i==j)
+			{
+				continue;
+			}
+			
+			if (Number(arr[4][i]) < Number(arr[4][j]))
+			{
+				arr[5][i] += 1;
+			}
+		}
+	}
+	
+	var result = "";
+	
+	for (var i = 0; i < arr[0].length; i++)
+	{
+		for (var j = 0; j < arr.length; j++)
+		{
+			result += arr[j][i] + "    ";
+		}
+		
+		result += "\n";
+	}
+	
+	document.getElementById("countAll").value = arr[0].length;
+	document.getElementById("showResult").value = " 이름  국어  영어  수학  총점  등수\n";
+	document.getElementById("showResult").value += result;
+}
+</script>
+</head>
+<body>
+<!-- 
+	prompt()를 활용하여 여러 명의 성적을 입력받고,
+	등수를 부여하여 리스트를 출력하는 페이지를 구성한다.
+	HTML, CSS, Javascript 활용
+	
+	페이지 레이아웃
+	----------------------------------------------   prompt()
+	< 성적 정보 입력 > →→→→→→→→→→→→→→→→→→→→→→ 이름 국어 영어 수학(1) :        
+	
+	전체 인원 수 : [  ] 명
+	-----------------------------------
+	 이름  국어  영어  수학  총점  등수
+	최보라  90    80    70    xxx   1등
+	최파랑  80    70    60    xxx   2등 	
+	-----------------------------------
+	----------------------------------------------
+ -->
+
+<input type="button" id="btn" value = "&lt; 성적 정보 입력 &gt;" onclick="cal()">
+<br>
+전체 인원 수 : [<input type="text" id="countAll" readonly="readonly">]<br>
+<textarea rows="20" cols="30" id="showResult"></textarea>
+</body>
+</html>

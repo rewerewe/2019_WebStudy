@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- <script>
+// 이름, 나이 배열을 item으로 가지는 다차원 배열 정의
+var arr2 = new Array();
+arr2[0] = new Array('백충덕',   31);
+arr2[1] = new Array('bloodguy', 20);
+arr2[2] = new Array('nicehide', 19);
+arr2[3] = new Array('racoonx',  48);
+arr2[4] = new Array('mindriot', 23);
+
+// 그냥 출력해봄
+document.write(arr2);
+document.write('<br />');
+document.write('<br />');
+document.write('<br />');
+document.write('<br />');
+document.write('<br />');
+
+// iIdx로 인덱스 번호를 지정하여, 
+// 이름, 나이별로 정렬이 가능함.
+arr2.sort(function (a1, a2) {
+    //var idx = 0; // 이름
+    var idx = 1; // 나이
+
+    switch (idx) {
+        case 0: // 이름 - 문자열 정렬 (사실 기본이라 아무것도 안해도 됨)
+            a1[idx] = a1[idx].toString().toLowerCase();
+            a2[idx] = a2[idx].toString().toLowerCase();
+            break;
+        case 1: // 나이 - 정수변환
+            a1[idx] = parseInt(a1[idx]);
+            a2[idx] = parseInt(a2[idx]);
+            break;
+    }
+
+    return (a1[idx]<a2[idx]) ? -1 : ((a1[idx]>a2[idx]) ? 1 : 0);
+});
+document.write(arr2);
+</script> -->
+ <!-- 출처: https://bloodguy.tistory.com/entry/JavaScript-다차원-배열-정렬-multiple-array-sort [Bloodguy] -->
+
+
+ <script>
+ String.prototype.format = function() 
+ {
+	  a = this;
+	  
+	  for (k in arguments) 
+	  {
+	    a = a.replace("{" + k + "}", arguments[k])
+	  }
+	  
+	  return a
+}
+
+ document.write("hello {0} smd {1} sd {2}".format("aaa", "bbb", "ccc"));
+ </script>
+ <!-- https://coderwall.com/p/flonoa/simple-string-format-in-javascript -->
+
+
+</head>
+<body>
+
+</body>
+</html>
