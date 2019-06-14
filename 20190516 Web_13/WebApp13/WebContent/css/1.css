@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body, p, div, span, input, table, th, td, select {
+	font-size: 18px;
+	color: #343;
+	font-family: 나눔 고딕;
+}
+input{
+	padding-left: 5px;
+}
+h1 {
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+
+li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+table.table.table-hover{
+	border-bottom-color: inherit;
+}
+
+.table td, .table th {
+	text-align: center;
+	vertical-align: inherit;
+}
+
+.table th {
+	font-weight: bold;
+	/* background-color : #eee; */
+	text-align: center;
+	/* background-color:#eee; */
+}
+
+/* 네비게이션 버튼 간격  */
+.btn {
+	margin: 0px 10px 0px 10px;
+}
+
+/* 미입력 경고창 */
+.form-group.has-danger {
+	display: none;
+}
+/*수정 초기화 목록 버튼 정렬*/
+.buttonArray {
+	text-align: center;
+}
+
+div#buttonArray {
+	text-align: center;
+	padding: 100px 100px 100px 100px;
+}
+
+div#buttonArray button#grade_button {
+	padding: 100px;
+	margin: 100px ,100px ,100px,100px;
+}
+
+/* 추가함 */
+.btn02
+{
+	color: gray;
+	border: gray solid 1px;
+}
+.btn02:hover
+{
+		color: gray;
+	border: gray solid 1px;
+	background-color: white;
+}
+
+/* 5월 17일 7시 40분 기승 추가 */
+input.inputCenter
+{
+	text-align: center;
+}
+.down
+{
+	margin-top: 80px;
+}
