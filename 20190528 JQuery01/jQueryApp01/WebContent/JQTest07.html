@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest07.html</title>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+	/*
+	$(document).ready(function()
+	{
+		if ( $("#all-check").click(function() )
+		{
+			//alert("확인");
+			$("input[type=checkbox]").attr("checked", "checked");
+			
+		}
+		else
+		{
+			$("input[type=checkbox]").attr("checked", "unchecked");	
+		});
+	});
+	*/
+	
+	// 함께 풀이한 내용 
+	$(document).ready(function()
+	{
+		/*
+		$("#all-check").change(function()
+		{
+			// 테스트
+			alert("change");
+		});
+		*/
+		
+		$("#all-check").click(function()
+		{
+			// 테스트
+			//alert("click");
+		
+			// 테스트 : all-check(this) 의 속성을 확인해보자. 
+			//alert( $(this).attr("checked") );		//-- undefined / undefined
+			
+			//alert( $(this).prop("checked") );		//-- 속성 → true / false
+			//alert( this.checked );				//-- 속성 → true / false (java 방식 → 그럼에도 확인된다.. )
+			//alert( $(this).is(":checked") )		//-- 속성 → true / false
+			
+			// javascript 는 조금씩 꾸준히 계속해야, 나중에 애먹지 않습니다..
+			
+			// 방법 1.
+			// div 아래 input 중 type=checkbox 인 것 모두. 
+			//$("div > input:checkbox").prop("checked", this.checked );
+			
+			// 방법 2.
+			// 『$(선택자).children()』
+			$("div").children().prop("checked", this.checked );
+			
+		});
+				
+	});
+	
+	
+	
+</script>
+</head>
+<body>
+
+<label><input type="checkbox" id="all-check">모두 선택</label>
+
+<div>
+	<input type="checkbox" id="check1"><label for="check1">바나나</label><br>
+	<input type="checkbox" id="check2"><label for="check2">딸기</label><br>
+	<input type="checkbox" id="check3"><label for="check3">망고</label><br>
+	<input type="checkbox" id="check4"><label for="check4">자몽</label><br>
+	<input type="checkbox" id="check5"><label for="check5">수박</label><br>
+</div>
+
+</body>
+</html>

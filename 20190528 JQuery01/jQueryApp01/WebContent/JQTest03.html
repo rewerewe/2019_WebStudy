@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest03.html</title>
+<style type="text/css">
+
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	div{
+		margin: 5px;
+		padding: 3px;
+		border: 3px solid black;
+		border-radius: 10px;
+	}
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	
+	
+	/*
+	// 내가 풀이한 내용 
+	$(document).ready(function()
+	{
+		$("div").on("click", function()
+		{
+			alert( $(this).html() );
+		});
+		
+	});
+	*/
+	
+	// 함께 풀이한 내용 
+	$(document).ready(function()
+	{
+		$("div").click(function()
+		{
+			//alert("test");
+			//alert( $(this).html() );
+			//alert( $(this).text() );
+			
+			// $("h1", this) : div 를 통해 선택된 h1만 선택하겠다.
+			//alert( $("h1", this).text() );
+			//alert( $("p", this).text() );
+			
+			var h1 = $("h1", this).text();
+			var p = $("p", this).text();
+			
+			alert(h1 + " / " + p);
+			
+			
+		});
+	});
+	
+	
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<h1>A강의실</h1>
+	<p>JAVA 수업중</p>
+</div>
+
+<div>
+	<h1>B강의실</h1>
+	<p>닷넷 수업중</p>
+</div>
+
+<div>
+	<h1>C강의실</h1>
+	<p>오라클 수업중</p>
+</div>
+
+<div>
+	<h1>D강의실</h1>
+	<p>ASP 수업중</p>
+</div>
+
+<div>
+	<h1>E강의실</h1>
+	<p>JSP 수업중</p>
+</div>
+
+<div>
+	<h1>F강의실</h1>
+	<p>제이쿼리 수업중</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest02_ref.html</title>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+	
+	// JQTest02.html 파일과 비교해서 봅시다.
+	function actionTest(obj)
+	{
+		// (안된다) var a = document.getElementById(obj.id);
+		var a = document.getElementById(obj.getAttribute("id"));
+		// alert(a);
+		a.innerHTML += "★";
+	}
+
+</script>
+
+</head>
+<body>
+
+<h1 onclick="actionTest(this)" id="name1">김선아</h1>
+<h1 onclick="actionTest(this)" id="name2">조현우</h1>
+<h1 onclick="actionTest(this)" id="name3">최보라</h1>
+
+</body>
+</html>

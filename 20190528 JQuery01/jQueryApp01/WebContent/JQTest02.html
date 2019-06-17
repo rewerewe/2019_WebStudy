@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQTest02.html</title>
+<style type="text/css">
+
+	.item
+	{
+		border: solid 2px red;
+		color: white;
+		background: black;
+		
+	}
+	
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+
+<script type="text/javascript">
+
+	// JQTest02_ref.html 파일과 비교해서 봅시다.
+	/*
+	function test()
+	{
+		alert("함수 호출 확인~");
+	}
+ 	*/
+ 	// $(); 					→ 쓸 수 있는건 src="js/jquery-x.x.x.js" 가 있기 때문. jQeury 를 쓸 수있는 환경이 된 것
+ 	// $(document).ready();
+ 	// jquery(); 				→ 초기형태. $ 로 바뀐 것 
+ 	// jquery(document).ready();
+ 	
+ 	
+ 	$(document).ready(function()
+	{
+		// $() 안에 funtion 은 기능하게 하려할 때 사용.
+		//alert("기능 확인");
+		
+		// 우리가, 또는 사용자가 
+		// 뭔가 건드리지 않아도 
+		// (특별한 이벤트를 시키지 않아도)
+		// 자동으로 처리될 수 있는 영역 
+		
+		/*
+	 	$("h1").click(function()
+		{
+			//alert("클릭되었네요!!!!");
+			// alert( $(this).html() );
+			//$(this).html("어떻게 될까요?");
+			//$(this).html( $(this).html() + "★" );
+		});
+		
+		
+		// 『on()』 : 이벤트 처리
+		$("h1").on("click", function()
+		{
+			// alert("클릭 이벤트 발생");
+			alert( $(this).html() );
+		})
+ 		
+ 		
+ 		$("h1").one("click", function()
+		{
+			//alert("클릭");
+			//alert ( $(this).html() );
+			
+			$(this).html(function(index, html)
+			{
+				//alert(html);  	//-- 김선아, 조현우, 최보라 출력
+				//alert(index);		//-- 0 출력
+				return html + "★";
+			});
+		});
+ 		
+ 		
+ 		// $("h1").on({}); → 여러가지 속성을 넘길때, 정보를 바인딩할 때 {} 사용.	
+ 		$("h1").on(
+ 		{
+ 			// mouseenter : 어찌어찌하겠다 → 마우스 진입할 때 함수 실행.
+ 			// mouseleave : 어찌어찌하겠다 → 마우스 빠져나올 때 
+ 			mouseenter:function() { $(this).addClass("item"); }
+ 			, mouseleave:function() { $(this).removeClass("item"); }
+ 			
+ 		});
+ 		*/
+
+ 		// mouseenter, mouseleave
+ 		$("h1").hover(function()
+		{
+			$(this).addClass("item");
+		}
+ 		, function()
+		{
+			$(this).removeClass("item");
+		});
+	
+	});
+	
+
+</script>
+
+
+</head>
+<body>
+
+<!-- <h1 onclick="함수()">김선아</h1> -->
+<h1>김선아</h1>
+<h1>조현우</h1>
+<!-- <h1 class="item">최보라</h1> -->
+<h1>최보라</h1>
+
+</body>
+</html>
