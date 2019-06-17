@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServeletSample</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+<!-- hello → Send03Controller --> 
+  <servlet>
+    <servlet-name>HelloSend03Controller</servlet-name>
+    <servlet-class>com.test.svt.HelloSend03Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloSend03Controller</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+<!-- (form의 action으로) bye → Receive03Controller --> 
+  <servlet>
+    <servlet-name>HelloReceive03Controller</servlet-name>
+    <servlet-class>com.test.svt.HelloReceive03Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloReceive03Controller</servlet-name>
+    <url-pattern>/bye</url-pattern>
+  </servlet-mapping>
+</web-app>
